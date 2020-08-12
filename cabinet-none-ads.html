@@ -1,0 +1,238 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/jquery.formstyler.css" rel="stylesheet">
+<title>Foro.ge</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div class="wrapper"> 
+  
+  <!--TOP-->
+  <div id="top">
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <nav class="nav-top">
+            <ul>
+              <li class="home"><a href="#">Главная</a></li>
+              <li class="contacts"><a href="#">Контакты</a></li>
+              <li class="register"><a href="#">Регистрация</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="span3 offset1">
+          <div class="login"><a href="#"><i></i>Войти в личный кабинет</a></div>
+        </div>
+        <div class="span2 offset2">
+          <div class="lang"><a href="#" class="current">RU</a><a href="#">UA</a><a href="#">ENG</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--TOP END--> 
+  
+  <!--HEADER-->
+  <div id="top-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="span2">
+          <div class="logo"><a href="#"></a><span>доска обьявлений</span></div>
+        </div>
+        <div class="span4 offset1">
+          <div class="search">
+            <input type="text" name="s" value="Поиск..." onblur="if(this.value=='') this.value='Поиск...';" onfocus="if(this.value=='Поиск...')this.value='';" onkeyup="document.getElementById('yandex_sq').value = this.value;" autocomplete="off">
+            <input type="button" name="" value="Искать" >
+          </div>
+        </div>
+        <div class="span2">
+          <div class="city">
+            <select class="input-small">
+              <option disabled="disabled">Выбрать город</option>
+              <option>Москва</option>
+              <option>Саратов</option>
+              <option>Волгоград</option>
+              <option>Тюмень</option>
+              <option>Астрахань</option>
+            </select>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="add-button"><a href="#" title="Добавить обьявление">Добавить обьявление</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--HEADER END--> 
+  
+  <!--CABINET TITLE BOX-->
+  <div class="cabinet-box-bg">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="cabinet-title inline"><i class="inline"></i>Личный кабинет</div>
+          <div class="cabinet-title-descript inline">Здесь вы найдете все ваши активные обьявление</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--CABINET TITLE BOX END--> 
+  
+  <!--CONTAINER-->
+  <div class="container">
+    <div class="row">
+      <div class="span12" id="content-box"> 
+        
+        <!--CABINET-USER-INFO-->
+        <div class="row">
+          <div class="span12">
+            <div class="user-info-box">
+              <div class="user-name inline">Джонатан паркер</div>
+              <div class="number-ads">Всего обьявлений: <span>0</span></div>
+            </div>
+          </div>
+        </div>
+        <!--CABINET-USER-INFO END--> 
+        
+        <!--CABINET-TABS-->
+        <div class="row">
+          <div class="span12 tabs-box">
+            <ul id="#myTab" class="nav nav-tabs">
+              <li class="active"><a href="#ads" data-toggle="tab">Мои обьявления</a></li>
+              <li><a href="#profile" data-toggle="tab">Настройки</a></li>
+            </ul>
+            <div id="#myTabContent" class="tab-content"> 
+              
+              <!--TABS ADS-->
+              <div class="tab-pane active" id="ads">
+                <div class="row">
+                  <div class="span12">
+                    
+                    <div class="attention-box">
+                    <p>У вас нет ни одного обьявления.</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <!--TABS ADS END--> 
+              
+              <!--TABS PROFILE-->
+              <div class="tab-pane" id="profile">
+                <header class="content-title title-profile">
+                  <h1>Изменить контактные данные</h1>
+                </header>
+                <form class="profile-form">
+                  <div class="row">
+                    <div class="span12">
+                      <div class="input-row">
+                        <label>Точный адрес</label>
+                        <input type="text" name="" class="input-mylarge">
+                      </div>
+                      <div class="input-row">
+                        <label>Контактное лицо</label>
+                        <input type="text" name="" class="input-mylarge">
+                      </div>
+                      <div class="input-row">
+                        <label>Номер телефона</label>
+                        <input type="text" name="" class="input-mylarge">
+                      </div>
+                      <div class="input-row">
+                        <label>Skype</label>
+                        <input type="text" name="" class="input-mylarge">
+                      </div>
+                      <br>
+                      
+                    </div>
+                  </div>
+                  
+                  <header class="content-title title-profile">
+                  <h1>Изменить пароль</h1>
+                  </header>
+                  <div class="input-row">
+                        <label>Новый пароль</label>
+                        <input type="text" name="" class="input-mylarge">
+                      </div>
+                      <div class="input-row">
+                        <label>Повторите новый пароль</label>
+                        <input type="text" name="" class="input-mylarge">
+                      </div>
+                       <div class="input-row"><input type="submit" class="button" value="Изменить"></div>
+                      
+                </form>
+              </div>
+              <!--TABS PROFILE END--> 
+              
+            </div>
+          </div>
+        </div>
+        <!--CABINET-TABS END--> 
+        
+        <!--LAST-ADS-->
+        <div class="container">
+          <div class="row" id="last-ads">
+            <div class="span12">
+              <header class="content-title last-ads">
+                <h1>Последние добавленные объявления:</h1>
+              </header>
+              <div class="row">
+                <ul class="last-ads-item">
+                  <li class="span3 clearfix"><a href="#"><img src="images/img-add1.png" alt=""></a>
+                    <h1><a href="#">Обьявление 1</a></h1>
+                    <p>Etiam aliquam auctor purus in tempus. Pellentesque vulputate auctor lectus, a vulputate dolor volutpat sed. Nam vel suscipit nulla. Phasellus enim metus, tempus vitae feugiat ac, vehicula et diam. Aenean eleifend, odio a vehicula pharetra, ipsum ante pulvinar enim, non semper nisl quam a sapien. Nulla nec libero velit. </p>
+                  </li>
+                  <li class="span3 clearfix"><a href="#"><img src="images/img-add2.png" alt=""></a>
+                    <h1><a href="#">Обьявление 2</a></h1>
+                    <p>Etiam aliquam auctor purus in tempus. Pellentesque vulputate auctor lectus, a vulputate dolor volutpat sed. Nam vel suscipit nulla. Phasellus enim metus, tempus vitae feugiat ac, vehicula et diam. Aenean eleifend, odio a vehicula pharetra, ipsum ante pulvinar enim, non semper nisl quam a sapien. Nulla nec libero velit. </p>
+                  </li>
+                  <li class="span3 clearfix"><a href="#"><img src="images/img-add3.png" alt=""></a>
+                    <h1><a href="#">Обьявление 3</a></h1>
+                    <p>Etiam aliquam auctor purus in tempus. Pellentesque vulputate auctor lectus, a vulputate dolor volutpat sed. Nam vel suscipit nulla. Phasellus enim metus, tempus vitae feugiat ac, vehicula et diam. Aenean eleifend, odio a vehicula pharetra, ipsum ante pulvinar enim, non semper nisl quam a sapien. Nulla nec libero velit. </p>
+                  </li>
+                  <li class="span3 clearfix"><a href="#"><img src="images/img-add4.png" alt=""></a>
+                    <h1><a href="#">Обьявление 4</a></h1>
+                    <p>Etiam aliquam auctor purus in tempus. Pellentesque vulputate auctor lectus, a vulputate dolor volutpat sed. Nam vel suscipit nulla. Phasellus enim metus, tempus vitae feugiat ac, vehicula et diam. Aenean eleifend, odio a vehicula pharetra, ipsum ante pulvinar enim, non semper nisl quam a sapien. Nulla nec libero velit. </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--LAST-ADS END--> 
+        
+      </div>
+    </div>
+  </div>
+  <!--CONTAINER END-->
+  
+  <div class="empty"></div>
+</div>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-line"></div>
+      <div class="span12 footer-top clearfix"> <a href="#">Все рубрики</a> | <a href="#">Подать обявление</a> | <a href="#">Найти объявления</a> | <a href="#">Запомнить сайт</a>
+        <div class="powered">Дизайн сайта - <a href="http://www.buyhtml.ru" target="_blank">Buyhtml.ru</a></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span12 footer-bottom">
+        <p> <span>© 2012 Foro.ge</span> — сайт бесплатных объявлений о продаже всего, чего угодно — автомобиль или стиральная машина, квартира или мебель. Вы сможете быстро найти и купить все, что нужно и продать то, что стало лишним. Разместите бесплатное объявление о ваших услугах или товаре, и его увидят посетители вашего региона и по всей России. Подать объявление просто, всего пару минут, без регистрации, но с возможностью управления вашим объявлением - и вы получаете звонки покупателей. </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-1.10.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.formstyler.js"></script> 
+<script src="js/components.js"></script> 
+<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/jquery.formstyler.css" rel="stylesheet">
+<link href="css/jquery.fancybox.css" rel="stylesheet">
+<title>Foro.ge</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div class="wrapper"> 
+  
+  <!--TOP-->
+  <div id="top">
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <nav class="nav-top">
+            <ul>
+              <li class="home"><a href="#">Главная</a></li>
+              <li class="contacts"><a href="#">Контакты</a></li>
+              <li class="register"><a href="#">Регистрация</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="span3 offset1">
+          <div class="login"><a href="#"><i></i>Войти в личный кабинет</a></div>
+        </div>
+        <div class="span2 offset2">
+          <div class="lang"><a href="#" class="current">RU</a><a href="#">UA</a><a href="#">ENG</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--TOP END--> 
+  
+  <!--HEADER-->
+  <div id="top-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="span2">
+          <div class="logo"><a href="#"></a><span>доска обьявлений</span></div>
+        </div>
+        <div class="span4 offset1">
+          <div class="search">
+            <input type="text" name="s" value="Поиск..." onblur="if(this.value=='') this.value='Поиск...';" onfocus="if(this.value=='Поиск...')this.value='';" onkeyup="document.getElementById('yandex_sq').value = this.value;" autocomplete="off">
+            <input type="button" name="" value="Искать" >
+          </div>
+        </div>
+        <div class="span2">
+          <div class="city">
+            <select class="input-small">
+              <option disabled="disabled">Выбрать город</option>
+              <option>Москва</option>
+              <option>Саратов</option>
+              <option>Волгоград</option>
+              <option>Тюмень</option>
+              <option>Астрахань</option>
+            </select>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="add-button"><a href="#" title="Добавить обьявление">Добавить обьявление</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--HEADER END--> 
+  
+  <!--CONTAINER-->
+  <div class="container">
+    <div class="row">
+      <div class="span12" id="content-box">
+        <header class="content-title section paid">
+          <h1>Платная: услуга для обьявления №1283</h1>
+          <ul class="pagination-breadcrumb paid">
+                <li><a href="#">Вернуться</a></li>
+              </ul>
+        </header>
+      
+        <!--RANGE-SERVICES-->
+        <div class="row">
+        <div class="span12">
+        <div class="range-services clearfix">
+          <header class="clearfix">
+                    <i>1</i><h5>Выберите одну или несколько услуг:</h5>
+                      
+                  </header>
+        
+        <ul class="range-services-box">
+        <li class="clearfix"> 
+        <div class="filter-search">
+        <div class="filter-search-line">
+                    <label class="inline">
+                      <input type="checkbox">
+                      <img src="images/icon-vip.jpg" alt="">
+                      обьявление</label>
+                    </div>
+                  </div>
+                  <div class="filter-sub-category paid">
+                  <div class="inline">
+                        <select>
+                          <option>1 день</option>
+                          <option>2 дня</option>
+                          <option disabled>3 дня</option>
+                          <option>4 дня</option>
+                          <option>5 дней</option>
+                          <option>6 дней</option>
+                          <option>7 дней</option>
+                          <option>8 дней</option>
+                          <option>9 дней</option>
+                          <option>10 дней</option>
+                          <option>11 дней</option>
+                          <option>12 дней</option>
+                          <option>13 дней</option>
+                          <option>14 дней</option>
+                          <option>15 дней</option>
+                          <option>16 дней</option>
+                          <option>17 дней</option>
+                          <option>18 дней</option>
+                          <option>19 дней</option>
+                          <option>20 дней</option>
+                          <option>21 дней</option>
+                          <option>22 дней</option>
+                          <option>23 дней</option>
+                          <option>24 дней</option>
+                          <option>25 дней</option>
+                          <option>26 дней</option>
+                          <option>27 дней</option>
+                          <option>28 дней</option>
+                          <option>29 дней</option>
+                          <option>30 дней</option>
+                          <option>31 день</option>
+                        </select>
+                      </div>
+                  <div class="filter-sub-category-price">250 GEL</div>
+                      </div>
+                      <div class="looks-like">
+                      <a id="fancybox-overlay" href="#looks">Как это выглядит?</a>
+                      </div>
+                      <!--DIV MODAL WIN-->
+        <div id="looks" class="form-modal clearfix" style="z-index:8000; display: none;">
+         <div class="looks-text"><span>Ваше обьявление</span> будет показываться на самом заметном месте. 
+Обьявление будет выделяться синим цветом с надписью VIP.
+Обьявление будет находиться в ТОПе до истечения срока услуги. </div>
+<div class="looks-image"><img src="images/img-pop-up.jpg" alt=""></div>
+        </div>
+        <!--DIV END MODAL WIN--> 
+                  </li>
+                   <li class="clearfix"> 
+        <div class="filter-search">
+        <div class="filter-search-line">
+                    <label class="inline">
+                      <input type="checkbox">
+                      <img src="images/icon-highlighting.jpg" alt="">
+                      Выделение цветом</label>
+                    </div>
+                  </div>
+                  <div class="filter-sub-category paid">
+                  <div class="inline">
+                        <select>
+                          <option>1 день</option>
+                          <option>2 дня</option>
+                          <option disabled>3 дня</option>
+                          <option>4 дня</option>
+                          <option>5 дней</option>
+                          <option>6 дней</option>
+                          <option>7 дней</option>
+                          <option>8 дней</option>
+                          <option>9 дней</option>
+                          <option>10 дней</option>
+                          <option>11 дней</option>
+                          <option>12 дней</option>
+                          <option>13 дней</option>
+                          <option>14 дней</option>
+                          <option>15 дней</option>
+                          <option>16 дней</option>
+                          <option>17 дней</option>
+                          <option>18 дней</option>
+                          <option>19 дней</option>
+                          <option>20 дней</option>
+                          <option>21 дней</option>
+                          <option>22 дней</option>
+                          <option>23 дней</option>
+                          <option>24 дней</option>
+                          <option>25 дней</option>
+                          <option>26 дней</option>
+                          <option>27 дней</option>
+                          <option>28 дней</option>
+                          <option>29 дней</option>
+                          <option>30 дней</option>
+                          <option>31 день</option>
+                        </select>
+                      </div>
+                  <div class="filter-sub-category-price">40 GEL</div>
+                      </div>
+                      <div class="looks-like">
+                     <a id="fancybox-overlay" href="#looks">Как это выглядит?</a>
+                      </div>
+                  </li>
+                   <li class="clearfix"> 
+        <div class="filter-search">
+        <div class="filter-search-line">
+                    <label class="inline">
+                      <input type="checkbox">
+                      <img src="images/icon-urgent.jpg" alt="">
+                      Срочное обьявление</label>
+                    </div>
+                  </div>
+                  <div class="filter-sub-category paid">
+                  <div class="inline">
+                        <select>
+                          <option>1 день</option>
+                          <option>2 дня</option>
+                          <option disabled>3 дня</option>
+                          <option>4 дня</option>
+                          <option>5 дней</option>
+                          <option>6 дней</option>
+                          <option>7 дней</option>
+                          <option>8 дней</option>
+                          <option>9 дней</option>
+                          <option>10 дней</option>
+                          <option>11 дней</option>
+                          <option>12 дней</option>
+                          <option>13 дней</option>
+                          <option>14 дней</option>
+                          <option>15 дней</option>
+                          <option>16 дней</option>
+                          <option>17 дней</option>
+                          <option>18 дней</option>
+                          <option>19 дней</option>
+                          <option>20 дней</option>
+                          <option>21 дней</option>
+                          <option>22 дней</option>
+                          <option>23 дней</option>
+                          <option>24 дней</option>
+                          <option>25 дней</option>
+                          <option>26 дней</option>
+                          <option>27 дней</option>
+                          <option>28 дней</option>
+                          <option>29 дней</option>
+                          <option>30 дней</option>
+                          <option>31 день</option>
+                        </select>
+                      </div>
+                  <div class="filter-sub-category-price">10 GEL</div>
+                      </div>
+                      <div class="looks-like">
+                     <a id="fancybox-overlay" href="#looks">Как это выглядит?</a>
+                      </div>
+                  </li>
+                   <li class="clearfix"> 
+        <div class="filter-search">
+        <div class="filter-search-line">
+                    <label class="inline">
+                      <input type="checkbox">
+                      <img src="images/icon-up-list.jpg" alt="">
+                      Поднятие в верх списка</label>
+                    </div>
+                  </div>
+                  <div class="filter-sub-category paid">
+                  <div class="inline">
+                        <select>
+                          <option>1 день</option>
+                          <option>2 дня</option>
+                          <option disabled>3 дня</option>
+                          <option>4 дня</option>
+                          <option>5 дней</option>
+                          <option>6 дней</option>
+                          <option>7 дней</option>
+                          <option>8 дней</option>
+                          <option>9 дней</option>
+                          <option>10 дней</option>
+                          <option>11 дней</option>
+                          <option>12 дней</option>
+                          <option>13 дней</option>
+                          <option>14 дней</option>
+                          <option>15 дней</option>
+                          <option>16 дней</option>
+                          <option>17 дней</option>
+                          <option>18 дней</option>
+                          <option>19 дней</option>
+                          <option>20 дней</option>
+                          <option>21 дней</option>
+                          <option>22 дней</option>
+                          <option>23 дней</option>
+                          <option>24 дней</option>
+                          <option>25 дней</option>
+                          <option>26 дней</option>
+                          <option>27 дней</option>
+                          <option>28 дней</option>
+                          <option>29 дней</option>
+                          <option>30 дней</option>
+                          <option>31 день</option>
+                        </select>
+                      </div>
+                  <div class="filter-sub-category-price">100 GEL</div>
+                      </div>
+                      <div class="looks-like">
+                     <a id="fancybox-overlay" href="#looks">Как это выглядит?</a>
+                      </div>
+                  </li>
+        </ul>
+     
+        </div>
+        </div>
+        </div>
+        <!--RANGE-SERVICES-END-->
+        <!--SELECT-PAYMENT-->
+        <div class="row">
+        <div class="span12">
+        <div class="select-payment clearfix">
+          <header class="clearfix">
+                    <i>2</i><h5>Выберите способ оплаты:</h5>
+                  </header>
+                  <ul class="select-payment-list clearfix">
+                  <li><a href="#"><div class="select-payment-image"><img src="images/img-select-payment-1.jpg" alt=""></div> <div class="card-name">Банковская карта</div></a></li>
+                    
+                  <li class="active"><a href="#"><div class="select-payment-image"><img src="images/img-select-payment-1.jpg" alt=""></div> <div class="card-name">Банковская карта</div></a></li>
+                    
+                  <li><a href="#"><div class="select-payment-image"><img src="images/img-select-payment-1.jpg" alt=""></div> <div class="card-name">Банковская карта</div></a></li>
+                    
+                  <li><a href="#"><div class="select-payment-image"><img src="images/img-select-payment-1.jpg" alt=""></div> <div class="card-name">Банковская карта</div></a></li>
+                    
+                  <li><a href="#"><div class="select-payment-image"><img src="images/img-select-payment-1.jpg" alt=""></div> <div class="card-name">Банковская карта</div></a></li>
+                  </ul>
+                  
+                  <div class="range-services-sum"><span>Итого:</span> &nbsp;1000 GEL</div>
+                  <div class="payment-button"><a href="#">Оплатить</a></div>
+                  
+                  </div>
+        </div>
+        </div>
+        </div>
+        <!--SELECT-PAYMENT-END-->
+        
+      </div>
+    </div>
+       
+  </div>
+  <!--CONTAINER END-->
+  
+  <div class="empty"></div>
+</div>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-line"></div>
+      <div class="span12 footer-top clearfix"> <a href="#">Все рубрики</a> | <a href="#">Подать обявление</a> | <a href="#">Найти объявления</a> | <a href="#">Запомнить сайт</a>
+        <div class="powered">Дизайн сайта - <a href="http://www.buyhtml.ru" target="_blank">Buyhtml.ru</a></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span12 footer-bottom">
+        <p> <span>© 2012 Foro.ge</span> — сайт бесплатных объявлений о продаже всего, чего угодно — автомобиль или стиральная машина, квартира или мебель. Вы сможете быстро найти и купить все, что нужно и продать то, что стало лишним. Разместите бесплатное объявление о ваших услугах или товаре, и его увидят посетители вашего региона и по всей России. Подать объявление просто, всего пару минут, без регистрации, но с возможностью управления вашим объявлением - и вы получаете звонки покупателей. </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-1.10.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.formstyler.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/components.js"></script> 
+<script src="js/scripts.js"></script>
+</body>
+</html>

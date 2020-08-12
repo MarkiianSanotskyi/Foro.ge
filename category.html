@@ -1,0 +1,289 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/jquery.formstyler.css" rel="stylesheet">
+<title>Foro.ge</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<div class="wrapper"> 
+  
+  <!--TOP-->
+  <div id="top">
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <nav class="nav-top">
+            <ul>
+              <li class="home"><a href="#">Главная</a></li>
+              <li class="contacts"><a href="#">Контакты</a></li>
+              <li class="register"><a href="#">Регистрация</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="span3 offset1">
+          <div class="login"><a href="#"><i></i>Войти в личный кабинет</a></div>
+        </div>
+        <div class="span2 offset2">
+          <div class="lang"><a href="#" class="current">RU</a><a href="#">UA</a><a href="#">ENG</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--TOP END--> 
+  
+  <!--HEADER-->
+  <div id="top-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="span2">
+          <div class="logo"><a href="#"></a><span>доска обьявлений</span></div>
+        </div>
+        <div class="span4 offset1">
+          <div class="search">
+            <input type="text" name="s" value="Поиск..." onblur="if(this.value=='') this.value='Поиск...';" onfocus="if(this.value=='Поиск...')this.value='';" onkeyup="document.getElementById('yandex_sq').value = this.value;" autocomplete="off">
+            <input type="button" name="" value="Искать" >
+          </div>
+        </div>
+        <div class="span2">
+          <div class="city">
+            <select class="input-small">
+              <option disabled="disabled">Выбрать город</option>
+              <option>Москва</option>
+              <option>Саратов</option>
+              <option>Волгоград</option>
+              <option>Тюмень</option>
+              <option>Астрахань</option>
+            </select>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="add-button"><a href="#" title="Добавить обьявление">Добавить обьявление</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--HEADER END--> 
+  
+  <!--CONTAINER-->
+  <div class="container">
+    <div class="row">
+      <div class="span12" id="content-box">
+        <header class="content-title section">
+          <h1>Выберите раздел:</h1>
+        </header>
+        <!--CHOOSE SECTION-->
+        <div class="row" id="section">
+          <div class="span12 section-bg">
+            <div class="row">
+              <div class="span3 current">
+                <div class="category-img"><a href="#"><img src="images/ico-animals.png" alt=""></a></div>
+                <span><a href="#">Животный мир</a></span> </div>
+              <div class="span9">
+                <ul>
+                  <li><a href="#"><span>Собаки</span></a></li>
+                  <li><a href="#"><span>Кошки</span></a></li>
+                  <li><a href="#"><span>Аквариумные рыбки</span></a></li>
+                  <li><a href="#"><span>Недвижимость</span></a></li>
+                  <li><a href="#"><span>Вязка</span></a></li>
+                  <li><a href="#"><span>Птицы</span></a></li>
+                  <li><a href="#"><span>Грызуны</span></a></li>
+                  <li><a href="#"><span>Рептилии</span></a></li>
+                  <li><a href="#"><span>Бюро находок</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--CHOOSE SECTION END--> 
+        
+        <!--SECTION FILTER-->
+        <div class="row" id="section-filter">
+          <div class="span12 filter-box-bg">
+            <div class="row">
+              <div class="span12 clearfix"> 
+                
+                <!--FILTER TOP-->
+                <div class="filter-top clearfix">
+                  <div class="filter-search-button"><a href="#">Найти</a></div>
+                  <div class="filter-search">
+                    <label class="inline">
+                      <input type="checkbox">
+                      Поиск в заголовках</label>
+                    <span>|</span>
+                    <label class="inline">
+                      <input type="checkbox">
+                      Только с фото</label>
+                    <span>|</span>
+                    <label class="inline">
+                      <input type="checkbox">
+                      Только в бизнес обьявлениях</label>
+                  </div>
+                </div>
+                <!--FILTER TOP END--> 
+                
+                <!--FILTER BOTTOM-->
+                <div class="filter-bottom clearfix">
+                  <div class="filter-bottom-left">
+                    <div class="filter-sell">Продам <span>11257</span></div>
+                    <div class="filter-country"><a href="#">Обявления в Украине</a></div>
+                  </div>
+                  <div class="filter-bottom-right">
+                    <div class="filter-list-views"> <span class="inline">Вид списка:</span><a href="#" class="list-fleft inline"></a><a href="#" class="list-td inline"></a> </div>
+                    <div class="filter-sorting"> <span class="inline">Сортировка:</span>
+                      <div class="inline">
+                        <select>
+                          <option>-- Выберите --</option>
+                          <option>Пункт 1</option>
+                          <option>Пункт 2</option>
+                          <option disabled>Пункт 3</option>
+                          <option>Пункт 4</option>
+                          <option>Пункт 5</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--FILTER BOTTOM END--> 
+                
+                <!--VIP ADS-->
+                <div class="vip-box clearfix">
+                  <div class="vip-views">Топ - обьявления <a href="#">Смотреть все</a></div>
+                  <div class="vip-subscribe"><a href="#">Как попасть в  ТОП <span>(VIP)</span></a></div>
+                </div>
+                <!--VIP ADS END--> 
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--SECTION FILTER END--> 
+        
+        <!--SECTION ADS LIST-->
+        <div class="row">
+          <div class="span12 section-ads">
+            <ul>
+              <li class="clearfix">
+                <div class="ads-small-thumbnails"><a href="#"><img src="images/add-small-img1.png" alt=""> </a></div>
+                <div class="ads-content-box">
+                  <header>
+                    <h1><a href="#">Название товара</a></h1>
+                  </header>
+                  <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</article>
+                  <div class="ads-content-info"><a href="#">Животный мир</a> &nbsp;&raquo;&nbsp; <a href="#">Аквариумные рыбки</a> | <span>Севастополь</span></div>
+                </div>
+                <div class="ads-price-box">2500 грн. <span>Срочно! Возможен торг</span>
+                  <div class="ads-date">Добавлено: &nbsp;21.12.2013</div>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="ads-small-thumbnails"><a href="#"><img src="images/add-small-img1.png" alt=""> </a></div>
+                <div class="ads-content-box">
+                  <header>
+                    <h1><a href="#">Название товара</a></h1>
+                  </header>
+                  <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</article>
+                  <div class="ads-content-info"><a href="#">Животный мир</a> &nbsp;&raquo;&nbsp; <a href="#">Аквариумные рыбки</a> | <span>Севастополь</span></div>
+                </div>
+                <div class="ads-price-box">2500 грн.
+                  <div class="ads-date">Добавлено: &nbsp;17.12.2013</div>
+                </div>
+              </li>
+              <li class="clearfix">
+                <div class="ads-small-thumbnails"><a href="#"><img src="images/add-small-img1.png" alt=""> </a></div>
+                <div class="ads-content-box">
+                  <header>
+                    <h1><a href="#">Название товара</a></h1>
+                  </header>
+                  <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</article>
+                  <div class="ads-content-info"><a href="#">Животный мир</a> &nbsp;&raquo;&nbsp; <a href="#">Аквариумные рыбки</a> | <span>Севастополь</span></div>
+                </div>
+                <div class="ads-price-box">2500 грн.
+                  <div class="ads-date">Добавлено: &nbsp;16.12.2013</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--SECTION ADS LIST END--> 
+        
+        <!--PAGINATION-->
+        <div class="paginations">
+          <ul>
+            <li class="prev"> <a href="#"></a></li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="next"><a href="#"></a></li>
+          </ul>
+        </div>
+        <!--PAGINATION END--> 
+        
+        <!--LAST-ADS-->
+        <div class="container">
+          <div class="row" id="last-ads">
+            <div class="span12">
+              <header class="content-title last-ads">
+                <h1>Последние добавленные объявления:</h1>
+              </header>
+              <div class="row">
+                <ul class="last-ads-item">
+                  <li class="span3 clearfix"><a href="#"><img src="images/img-add1.png" alt=""></a>
+                    <h1><a href="#">Обьявление 1</a></h1>
+                    <p>Etiam aliquam auctor purus in tempus. Pellentesque vulputate auctor lectus, a vulputate dolor volutpat sed. Nam vel suscipit nulla. Phasellus enim metus, tempus vitae feugiat ac, vehicula et diam. Aenean eleifend, odio a vehicula pharetra, ipsum ante pulvinar enim, non semper nisl quam a sapien. Nulla nec libero velit. </p>
+                  </li>
+                  <li class="span3 clearfix"><a href="#"><img src="images/img-add2.png" alt=""></a>
+                    <h1><a href="#">Обьявление 2</a></h1>
+                    <p>Etiam aliquam auctor purus in tempus. Pellentesque vulputate auctor lectus, a vulputate dolor volutpat sed. Nam vel suscipit nulla. Phasellus enim metus, tempus vitae feugiat ac, vehicula et diam. Aenean eleifend, odio a vehicula pharetra, ipsum ante pulvinar enim, non semper nisl quam a sapien. Nulla nec libero velit. </p>
+                  </li>
+                  <li class="span3 clearfix"><a href="#"><img src="images/img-add3.png" alt=""></a>
+                    <h1><a href="#">Обьявление 3</a></h1>
+                    <p>Etiam aliquam auctor purus in tempus. Pellentesque vulputate auctor lectus, a vulputate dolor volutpat sed. Nam vel suscipit nulla. Phasellus enim metus, tempus vitae feugiat ac, vehicula et diam. Aenean eleifend, odio a vehicula pharetra, ipsum ante pulvinar enim, non semper nisl quam a sapien. Nulla nec libero velit. </p>
+                  </li>
+                  <li class="span3 clearfix"><a href="#"><img src="images/img-add4.png" alt=""></a>
+                    <h1><a href="#">Обьявление 4</a></h1>
+                    <p>Etiam aliquam auctor purus in tempus. Pellentesque vulputate auctor lectus, a vulputate dolor volutpat sed. Nam vel suscipit nulla. Phasellus enim metus, tempus vitae feugiat ac, vehicula et diam. Aenean eleifend, odio a vehicula pharetra, ipsum ante pulvinar enim, non semper nisl quam a sapien. Nulla nec libero velit. </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--LAST-ADS END--> 
+        
+      </div>
+    </div>
+  </div>
+  <!--CONTAINER END-->
+  
+  <div class="empty"></div>
+</div>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-line"></div>
+      <div class="span12 footer-top clearfix"> <a href="#">Все рубрики</a> | <a href="#">Подать обявление</a> | <a href="#">Найти объявления</a> | <a href="#">Запомнить сайт</a>
+        <div class="powered">Дизайн сайта - <a href="http://www.buyhtml.ru" target="_blank">Buyhtml.ru</a></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span12 footer-bottom">
+        <p> <span>© 2012 Foro.ge</span> — сайт бесплатных объявлений о продаже всего, чего угодно — автомобиль или стиральная машина, квартира или мебель. Вы сможете быстро найти и купить все, что нужно и продать то, что стало лишним. Разместите бесплатное объявление о ваших услугах или товаре, и его увидят посетители вашего региона и по всей России. Подать объявление просто, всего пару минут, без регистрации, но с возможностью управления вашим объявлением - и вы получаете звонки покупателей. </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/jquery-1.10.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.formstyler.js"></script> 
+<script src="js/components.js"></script> 
+<script src="js/scripts.js"></script>
+</body>
+</html>
